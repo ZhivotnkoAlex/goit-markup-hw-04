@@ -31,9 +31,17 @@
                 </nav>
             </div>
             <div class="contacts__wraper">
-                <a href="mailto:info@devstudio.com" class="contacts contacts__mail contacts--accent "> info@devstudio.com</a>
-                <a href="tel:380961111111" class=" contacts contacts__tel contacts--accent ">+38 096 111 11 11</a>
+                <a href="mailto:info@devstudio.com" class="contacts  contacts--accent ">
+                    <svg class="icon-envelope">
+                   <use href="./images/symbol-defs.svg#icon-envelope"  width=16 height=12></use>
+                </svg> info@devstudio.com
+                </a>
+                <a href="tel:380961111111" class=" contacts contacts__tel contacts--accent ">
+                    <svg class="icon-phone">
+                   <use href="./images/symbol-defs.svg#icon-phone" class="icon-envelope" width=10 height=15></use>
+                </svg> +38 096 111 11 11</a>
             </div>
+
         </div>
     </header>
     <main>
@@ -51,22 +59,38 @@
                 <h2 class="visually-hidden">Наши ценности</h2>
                 <ul class="values-section__list">
                     <li class="values-section__item">
-                        <a href=" " aria-label="антенна "></a>
+                        <div class="values__background">
+                            <svg class="values__icon">
+                            <use  href="./images/symbol-defs.svg#icon-antenna" width=65 height=70></use> 
+                        </svg>
+                        </div>
                         <h3 class="values-section__title ">Внимание к деталям</h3>
                         <p class="values-section__descr">Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
                     </li>
                     <li class="values-section__item">
-                        <a href=" " aria-label="часы "></a>
+                        <div class="values__background">
+                            <svg class="values__icon">
+                            <use  href="./images/symbol-defs.svg#icon-clock" width=67 height=70></use> 
+                        </svg>
+                        </div>
                         <h3 class="values-section__title">Пунктуальность</h3>
                         <p class="values-section__descr">Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
                     </li>
                     <li class="values-section__item">
-                        <a href=" " aria-label="диаграмма на мониторе "></a>
+                        <div class="values__background">
+                            <svg class="values__icon">
+                            <use  href="./images/symbol-defs.svg#icon-diagram" width=70 height=70></use> 
+                        </svg>
+                        </div>
                         <h3 class="values-section__title">Планирование</h3>
                         <p class="values-section__descr">Равным образом консультация с широким активом в значительной степени обуславливает.</p>
                     </li>
                     <li class="values-section__item">
-                        <a href=" " aria-label="космонавт "></a>
+                        <div class="values__background">
+                            <svg class="values__icon">
+                            <use  href="./images/symbol-defs.svg#icon-astronaut" width=70 height=70></use> 
+                            </svg>
+                        </div>
                         <h3 class="values-section__title">Современные технологии</h3>
                         <p class="values-section__descr">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
                     </li>
@@ -79,6 +103,7 @@
                 <h2 class="specialization__title">Чем мы занимаемся</h2>
                 <ul class="specialization__list">
                     <li class="specialization__list-item">
+
                         <a href=" "><img class="specialization__img " src="./images/box_1.png " width="370 " alt="ноутбук "></a>
                         <p class="specialization__descr">Десктопные приложения</p>
                     </li>
@@ -99,78 +124,142 @@
                 <h2 class="team__title ">Наша команда</h2>
                 <ul class="team__list">
                     <li class="card">
-                        <img class="card__img " src="./images/john_smith.png " width="270 " alt="джон смит ">
+                        <img class="card__img " src="./images/john_smith.jpg " width="270 " alt="джон смит ">
                         <h4 class="card__name ">John Smith</h4>
                         <p class="card__profession ">Product Designer</p>
                         <ul class="social-network">
                             <li>
-                                <a href="https://www.instagram.com/ " aria-label="Инстаграм "></a>
+                                <a href="https://www.instagram.com/ " class="social-network__link" aria-label="Инстаграм ">
+                                    <svg class="social-network__icon">
+                                        <use href="./images/symbol-defs.svg#icon-instagram" width=20 heigh=20 ></use>
+                                    </svg>
+                                </a>
                             </li>
                             <li>
-                                <a href="https://twitter.com/ " aria-label="Твитер "></a>
+                                <a href="https://twitter.com/ " class="social-network__link" aria-label="Твитер ">
+                                    <svg class="social-network__icon">
+                                        <use href="./images/symbol-defs.svg#icon-twitter" width=20 height=20 ></use>
+                                    </svg>
+                                </a>
                             </li>
                             <li>
-                                <a href="https://www.facebook.com/ " aria-label="Фейсбук "></a>
+                                <a href="https://www.facebook.com/ " class="social-network__link" aria-label="Фейсбук ">
+                                    <svg class="social-network__icon">
+                                        <use href="./images/symbol-defs.svg#icon-facebook" width=20 height=20></use>
+                                    </svg>
+                                </a>
                             </li>
                             <li>
-                                <a href="https://www.linkedin.com/ " aria-label="Линкдин "></a>
+                                <a href="https://www.linkedin.com/ " class="social-network__link" aria-label="Линкдин ">
+                                    <svg class="social-network__icon">
+                                        <use href="./images/symbol-defs.svg#icon-linkedin" width=20 height=20 ></use>
+                                    </svg>
+                                </a>
                             </li>
                         </ul>
                     </li>
                     <li class="card ">
-                        <img class="card__img " src="./images/marta_stewart.png " width="270 " alt="марта стюарт ">
+                        <img class="card__img " src="./images/marta_stewart.jpg " width="270 " alt="марта стюарт ">
                         <h4 class="card__name">Marta Stewart</h4>
                         <p class="card__profession ">Frontend Developer</p>
                         <ul class="social-network">
                             <li>
-                                <a href="https://www.instagram.com/ " aria-label="Инстаграм "></a>
+                                <a href="https://www.instagram.com/ " class="social-network__link" aria-label="Инстаграм ">
+                                    <svg class="social-network__icon">
+                                        <use href="./images/symbol-defs.svg#icon-instagram" width=20 heigh=20 ></use>
+                                    </svg>
+                                </a>
                             </li>
                             <li>
-                                <a href="https://twitter.com/ " aria-label="Твитер "></a>
+                                <a href="https://twitter.com/ " class="social-network__link" aria-label="Твитер ">
+                                    <svg class="social-network__icon">
+                                        <use href="./images/symbol-defs.svg#icon-twitter" width=20 height=20 ></use>
+                                    </svg>
+                                </a>
                             </li>
                             <li>
-                                <a href="https://www.facebook.com/ " aria-label="Фейсбук "></a>
+                                <a href="https://www.facebook.com/ " class="social-network__link" aria-label="Фейсбук ">
+                                    <svg class="social-network__icon">
+                                        <use href="./images/symbol-defs.svg#icon-facebook" width=20 height=20></use>
+                                    </svg>
+                                </a>
                             </li>
                             <li>
-                                <a href="https://www.linkedin.com/ " aria-label="Линкдин "></a>
+                                <a href="https://www.linkedin.com/ " class="social-network__link" aria-label="Линкдин ">
+                                    <svg class="social-network__icon">
+                                        <use href="./images/symbol-defs.svg#icon-linkedin" width=20 height=20 ></use>
+                                    </svg>
+                                </a>
                             </li>
                         </ul>
                     </li>
                     <li class="card ">
-                        <img class="card__img" src="./images/robert_jakis.png " width="270 " alt="роберт джекис ">
+                        <img class="card__img" src="./images/robert_jakis.jpg " width="270 " alt="роберт джекис ">
                         <h4 class="card__name ">Robert Jakis</h4>
                         <p class="card__profession ">Marketing</p>
                         <ul class="social-network">
                             <li>
-                                <a href="https://www.instagram.com/ " aria-label="Инстаграм "></a>
+                                <a href="https://www.instagram.com/ " class="social-network__link" aria-label="Инстаграм ">
+                                    <svg class="social-network__icon">
+                                        <use href="./images/symbol-defs.svg#icon-instagram" width=20 heigh=20 ></use>
+                                    </svg>
+                                </a>
                             </li>
                             <li>
-                                <a href="https://twitter.com/ " aria-label="Твитер "></a>
+                                <a href="https://twitter.com/ " class="social-network__link" aria-label="Твитер ">
+                                    <svg class="social-network__icon">
+                                        <use href="./images/symbol-defs.svg#icon-twitter" width=20 height=20 ></use>
+                                    </svg>
+                                </a>
                             </li>
                             <li>
-                                <a href="https://www.facebook.com/ " aria-label="Фейсбук "></a>
+                                <a href="https://www.facebook.com/ " class="social-network__link" aria-label="Фейсбук ">
+                                    <svg class="social-network__icon">
+                                        <use href="./images/symbol-defs.svg#icon-facebook" width=20 height=20></use>
+                                    </svg>
+                                </a>
                             </li>
                             <li>
-                                <a href="https://www.linkedin.com/ " aria-label="Линкдин "></a>
+                                <a href="https://www.linkedin.com/ " class="social-network__link" aria-label="Линкдин ">
+                                    <svg class="social-network__icon">
+                                        <use href="./images/symbol-defs.svg#icon-linkedin" width=20 height=20 ></use>
+                                    </svg>
+                                </a>
                             </li>
                         </ul>
                     </li>
                     <li class="card ">
-                        <img class="card__img " src="./images/martin_doe.png " width="270 " alt="мартин доу ">
+                        <img class="card__img " src="./images/martin_doe.jpg " width="270 " alt="мартин доу ">
                         <h4 class="card__name ">Martin Doe</h4>
                         <p class="card__profession ">UI Designer</p>
                         <ul class="social-network">
                             <li>
-                                <a href="https://www.instagram.com/ " aria-label="Инстаграм "></a>
+                                <a href="https://www.instagram.com/ " class="social-network__link" aria-label="Инстаграм ">
+                                    <svg class="social-network__icon">
+                                        <use href="./images/symbol-defs.svg#icon-instagram" width=20 heigh=20 ></use>
+                                    </svg>
+                                </a>
                             </li>
                             <li>
-                                <a href="https://twitter.com/ " aria-label="Твитер "></a>
+                                <a href="https://twitter.com/ " class="social-network__link" aria-label="Твитер ">
+                                    <svg class="social-network__icon">
+                                        <use href="./images/symbol-defs.svg#icon-twitter" width=20 height=20 ></use>
+                                    </svg>
+                                </a>
                             </li>
                             <li>
-                                <a href="https://www.facebook.com/ " aria-label="Фейсбук "></a>
+                                <a href="https://www.facebook.com/ " class="social-network__link" aria-label="Фейсбук ">
+                                    <svg class="social-network__icon">
+                                        <use href="./images/symbol-defs.svg#icon-facebook" width=20 height=20></use>
+                                    </svg>
+                                </a>
                             </li>
                             <li>
-                                <a href="https://www.linkedin.com/ " aria-label="Линкдин "></a>
+                                <a href="https://www.linkedin.com/ " class="social-network__link" aria-label="Линкдин ">
+                                    <svg class="social-network__icon">
+                                        <use href="./images/symbol-defs.svg#icon-linkedin" width=20 height=20 ></use>
+                                    </svg>
+                                </a>
                             </li>
                         </ul>
                     </li>
@@ -179,26 +268,50 @@
         </section>
         <!-- клиенты -->
         <section class="clients">
-            <div class="clients__container ">
+            <div class="clients__container">
                 <h2 class="clients__title">Постоянные клиенты</h2>
                 <ul class="clients__list">
-                    <li>
-                        <a href="" aria-label="клиент1 "></a>
+                    <li class="clients__item">
+                        <a href="" class="clients__link" aria-label="клиент1 ">
+                            <svg width=45 height=50>
+                                <use href="./images/symbol-defs.svg#icon-logo_1" ></use>
+                            </svg>
+                        </a>
                     </li>
-                    <li>
-                        <a href=" " aria-label="клиент2 "></a>
+                    <li class="clients__item">
+                        <a href="" class="clients__link" aria-label="клиент2 ">
+                            <svg width=40 height=52>
+                                <use href="./images/symbol-defs.svg#icon-logo_2 " ></use>
+                            </svg>
+                        </a>
                     </li>
-                    <li>
-                        <a href=" " aria-label="клиент3 "></a>
+                    <li class="clients__item">
+                        <a href=" " class="clients__link" aria-label="клиент3 ">
+                            <svg width=41 height=43>
+                                <use href="./images/symbol-defs.svg#icon-logo_3 " ></use>
+                            </svg>
+                        </a>
                     </li>
-                    <li>
-                        <a href=" " aria-label="клиент4 "></a>
+                    <li class="clients__item">
+                        <a href=" " class="clients__link" aria-label="клиент4 ">
+                            <svg width=80 height=42>
+                                <use href="./images/symbol-defs.svg#icon-logo_4 " ></use>
+                                </svg>
+                        </a>
                     </li>
-                    <li>
-                        <a href=" " aria-label="клиент5 "></a>
+                    <li class="clients__item">
+                        <a href=" " class="clients__link" aria-label="клиент5 ">
+                            <svg width=59 height=47>
+                                <use href="./images/symbol-defs.svg#icon-logo_5 " ></use>
+                            </svg>
+                        </a>
                     </li>
-                    <li>
-                        <a href=" " aria-label="клиент6 "></a>
+                    <li class="clients__item">
+                        <a href=" " class="clients__link" aria-label="клиент6 ">
+                            <svg width=90 height=46>
+                                <use href="./images/symbol-defs.svg#icon-logo_6 " ></use>
+                            </svg>
+                        </a>
                     </li>
                 </ul>
             </div>
@@ -221,18 +334,34 @@
                 <!-- социальные сети -->
                 <div class="invitation">
                     <b class="invitation__title">присоединяйтесь</b>
-                    <ul class="invitation__networks">
+                    <ul class="social-network__footer">
                         <li>
-                            <a href="https://www.instagram.com/ " aria-label="Инстаграм "></a>
+                            <a href="https://www.instagram.com/ " class="social-network__link social-network__link--dark" aria-label="Инстаграм ">
+                                <svg class="social-network__icon">
+                                        <use href="./images/symbol-defs.svg#icon-instagram" width=20 heigh=20 ></use>
+                                    </svg>
+                            </a>
                         </li>
                         <li>
-                            <a href="https://twitter.com/ " aria-label="Твитер "></a>
+                            <a href="https://twitter.com/ " class="social-network__link social-network__link--dark" aria-label="Твитер ">
+                                <svg class="social-network__icon">
+                                        <use href="./images/symbol-defs.svg#icon-twitter" width=20 height=20 ></use>
+                                    </svg>
+                            </a>
                         </li>
                         <li>
-                            <a href="https://www.facebook.com/ " aria-label="Фейсбук "></a>
+                            <a href="https://www.facebook.com/ " class="social-network__link social-network__link--dark" aria-label="Фейсбук ">
+                                <svg class="social-network__icon">
+                                        <use href="./images/symbol-defs.svg#icon-facebook" width=20 height=20></use>
+                                    </svg>
+                            </a>
                         </li>
                         <li>
-                            <a href="https://www.linkedin.com/ " aria-label="Линкдин "></a>
+                            <a href="https://www.linkedin.com/ " class="social-network__link social-network__link--dark" aria-label="Линкдин ">
+                                <svg class="social-network__icon">
+                                        <use href="./images/symbol-defs.svg#icon-linkedin" width=20 height=20 ></use>
+                                    </svg>
+                            </a>
                         </li>
                     </ul>
                 </div>

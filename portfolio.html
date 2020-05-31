@@ -29,10 +29,18 @@
                     </ul>
                 </nav>
             </div>
-            <div>
-                <a href="mailto:info@devstudio.com" class=" contacts contacts--accent "> info@devstudio.com</a>
-                <a href="tel:380961111111" class=" contacts contacts--accent ">+38 096 111 11 11</a>
+            <div class="contacts__wraper">
+                <a href="mailto:info@devstudio.com" class="contacts  contacts--accent ">
+                    <svg class="icon-envelope">
+                   <use href="./images/symbol-defs.svg#icon-envelope"  width=16 height=12></use>
+                </svg> info@devstudio.com
+                </a>
+                <a href="tel:380961111111" class=" contacts contacts__tel contacts--accent ">
+                    <svg class="icon-phone">
+                   <use href="./images/symbol-defs.svg#icon-phone" class="icon-envelope" width=10 height=15></use>
+                </svg> +38 096 111 11 11</a>
             </div>
+
         </div>
     </header>
     <main>
@@ -126,40 +134,56 @@
 
     <footer class="footer ">
         <div class="footer__container ">
-            <div class="footer__items ">
+            <div class="footer__items">
                 <!-- контакты   -->
                 <div class="footer__contacts ">
-                    <a href="./index.html " class="logo--blue logo__footer "> Web <span class="logo--invert ">Studio</span></a>
-                    <address class="address ">
-                      <p class="address__local "> г. Киев, пр-т Леси Украинки, 26</p>
-                      <a href="mailto:info@example.com " class="address__mail ">info@example.com</a>
-                      <a href="tel:380961111111 " class="address__tel ">+38 096 111 11 11</a>
+                    <a href="./index.html " class="logo--blue logo__footer"> Web <span class="logo--invert">Studio</span></a>
+                    <address class="address">
+                      <p class="address__local"> г. Киев, пр-т Леси Украинки, 26</p>
+                      <a href="mailto:info@example.com " class="address__mail">info@example.com</a>
+                      <a href="tel:380961111111" class="address__tel">+38 096 111 11 11</a>
                     </address>
                 </div>
 
                 <!-- социальные сети -->
-                <div class="invitation ">
-                    <b class="invitation__title ">присоединяйтесь</b>
-                    <ul class="invitation__networks ">
+                <div class="invitation">
+                    <b class="invitation__title">присоединяйтесь</b>
+                    <ul class="social-network__footer">
                         <li>
-                            <a href="https://www.instagram.com/ " aria-label="Инстаграм "></a>
+                            <a href="https://www.instagram.com/ " class="social-network__link social-network__link--dark" aria-label="Инстаграм ">
+                                <svg class="social-network__icon">
+                                        <use href="./images/symbol-defs.svg#icon-instagram" width=20 heigh=20 ></use>
+                                    </svg>
+                            </a>
                         </li>
                         <li>
-                            <a href="https://twitter.com/ " aria-label="Твитер "></a>
+                            <a href="https://twitter.com/ " class="social-network__link social-network__link--dark" aria-label="Твитер ">
+                                <svg class="social-network__icon">
+                                        <use href="./images/symbol-defs.svg#icon-twitter" width=20 height=20 ></use>
+                                    </svg>
+                            </a>
                         </li>
                         <li>
-                            <a href="https://www.facebook.com/ " aria-label="Фейсбук "></a>
+                            <a href="https://www.facebook.com/ " class="social-network__link social-network__link--dark" aria-label="Фейсбук ">
+                                <svg class="social-network__icon">
+                                        <use href="./images/symbol-defs.svg#icon-facebook" width=20 height=20></use>
+                                    </svg>
+                            </a>
                         </li>
                         <li>
-                            <a href="https://www.linkedin.com/ " aria-label="Линкдин "></a>
+                            <a href="https://www.linkedin.com/ " class="social-network__link social-network__link--dark" aria-label="Линкдин ">
+                                <svg class="social-network__icon">
+                                        <use href="./images/symbol-defs.svg#icon-linkedin" width=20 height=20 ></use>
+                                    </svg>
+                            </a>
                         </li>
                     </ul>
                 </div>
                 <!-- подписка -->
-                <div class="submit ">
+                <div class="submit">
                     <b class="submit__title "> подписаться на рассылку</b>
-                    <ul class="submit__list ">
-                        <li class="submit__item "><input type="email " value="E-mail " class="submit__mail ">
+                    <ul class="submit__list">
+                        <li class="submit__item"><input type="email" value="E-mail" class="submit__mail ">
                         </li>
                         <li><button class="button submit__button ">Подписаться</button></li>
                     </ul>
