@@ -128,8 +128,6 @@
 }
 
 .icon-envelope {
-    width: 16px;
-    height: 12px;
     margin-right: 10px;
     align-self: center;
     fill: currentColor;
@@ -246,23 +244,13 @@
 
 .values__background {
     display: flex;
-    /* width: 270px; */
     height: 120px;
-    border-radius: 5px;
     border-radius: 5px;
     background-color: var(--secondary-background-color);
     justify-content: center;
     align-items: center;
     margin-bottom: 30px;
     margin-right: 0;
-}
-
-.values__icon {
-    justify-content: center;
-    justify-items: center;
-    width: 70px;
-    height: 70px;
-    border-radius: 5px;
 }
 
 .values-section__descr {
@@ -454,11 +442,6 @@
     background: rgba(255, 255, 255, 0.1);
     border-radius: 50%;
     fill: var(--button-color);
-}
-
-.social-network__icon {
-    width: 20px;
-    height: 20px;
 }
 
 .social-network__link:hover,
